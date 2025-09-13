@@ -1,0 +1,30 @@
+nohup: ignoring input
+2025-09-12 20:56:30,391 - __main__ - INFO - OpenAI client initialized with v1.52+ API
+2025-09-12 20:56:30,393 - werkzeug - WARNING - Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+🚀 Starting MCP DevOps Web Server v2.0...
+   Using: Python 3.12 | OpenAI 1.52+ | Flask 3.0.3
+📋 Configuration:
+   Web Interface: http://localhost:8082
+   MCP Server: server.py (auto-started)
+   LLM Client: OpenAI GPT-4
+   Kubernetes: v1.30.0 | Kind: v0.23.0
+
+==================================================
+🌐 Open your browser to: http://localhost:8082
+==================================================
+ * Serving Flask app 'web_server'
+ * Debug mode: off
+2025-09-12 20:56:30,402 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8082
+ * Running on http://172.31.26.64:8082
+2025-09-12 20:56:30,402 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-09-12 20:56:37,609 - werkzeug - INFO - 122.161.72.43 - - [12/Sep/2025 20:56:37] "GET / HTTP/1.1" 200 -
+2025-09-12 20:56:39,664 - werkzeug - INFO - 122.161.72.43 - - [12/Sep/2025 20:56:39] "POST /rpc HTTP/1.1" 200 -
+2025-09-12 20:56:40,144 - werkzeug - INFO - 122.161.72.43 - - [12/Sep/2025 20:56:40] "POST /rpc HTTP/1.1" 200 -
+2025-09-12 20:56:48,062 - werkzeug - INFO - 122.161.72.43 - - [12/Sep/2025 20:56:48] "POST /rpc HTTP/1.1" 200 -
+2025-09-12 20:56:48,573 - werkzeug - INFO - 122.161.72.43 - - [12/Sep/2025 20:56:48] "POST /rpc HTTP/1.1" 200 -
+2025-09-12 20:56:55,055 - werkzeug - INFO - 122.161.72.43 - - [12/Sep/2025 20:56:55] "POST /rpc HTTP/1.1" 200 -
+2025-09-12 20:57:07,100 - werkzeug - INFO - 122.161.72.43 - - [12/Sep/2025 20:57:07] "POST /rpc HTTP/1.1" 200 -
+2025-09-12 20:57:19,589 - werkzeug - INFO - 122.161.72.43 - - [12/Sep/2025 20:57:19] "POST /rpc HTTP/1.1" 200 -
+2025-09-12 21:10:57,870 - werkzeug - INFO - 122.161.72.43 - - [12/Sep/2025 21:10:57] "POST /rpc HTTP/1.1" 200 -

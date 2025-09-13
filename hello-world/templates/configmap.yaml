@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: theopskart-html
+data:
+  index.html: |
+    <html>
+    <head><title>TheOpsKart</title></head>
+    <body style="font-family: sans-serif; text-align: center; margin-top: 50px;">
+      <h1>{{ .Values.htmlMessage }}</h1>
+    </body>
+    </html>

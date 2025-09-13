@@ -1,0 +1,13 @@
+replicaCount: 1
+
+image:
+  repository: nginx
+  tag: latest
+  pullPolicy: IfNotPresent
+
+service:
+  type: NodePort
+  port: 80
+  nodePort: 30080
+
+htmlMessage: "Hello from TheOpsKart 👋"

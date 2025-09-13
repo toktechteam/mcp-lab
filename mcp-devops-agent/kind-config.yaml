@@ -1,0 +1,41 @@
+kind: Cluster
+apiVersion: kind.x-k8s.io/v1alpha4
+name: mcp-cluster
+nodes:
+  - role: control-plane
+    image: kindest/node:v1.30.0@sha256:047357ac0cfea04663786a612ba1eaba9702bef25227a794b52890dd8bcd692e
+    extraPortMappings:
+      # NodePort for services
+      - containerPort: 30000
+        hostPort: 30000
+        protocol: TCP
+        listenAddress: "0.0.0.0"
+      - containerPort: 30001
+        hostPort: 30001
+        protocol: TCP
+        listenAddress: "0.0.0.0"
+      # Grafana
+      - containerPort: 30030
+        hostPort: 30030
+        protocol: TCP
+        listenAddress: "0.0.0.0"
+      # Web UI
+      - containerPort: 30080
+        hostPort: 30080
+        protocol: TCP
+        listenAddress: "0.0.0.0"
+      # Prometheus
+      - containerPort: 30090
+        hostPort: 30090
+        protocol: TCP
+        listenAddress: "0.0.0.0"
+      # Alertmanager
+      - containerPort: 30093
+        hostPort: 30093
+        protocol: TCP
+        listenAddress: "0.0.0.0"
+networking:
+  apiServerAddress: "127.0.0.1"
+  apiServerPort: 6443
+  podSubnet: "10.244.0.0/16"
+  serviceSubnet: "10.96.0.0/12"
